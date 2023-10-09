@@ -1,10 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next/types";
 import Note from "./Note";
-import { zNotes } from "../type";
 import { getDetailNote, getNotes } from "@/lib/client";
-
-export const revalidate = 0;
 
 // ページのメタデータを動的に取得
 export async function generateMetadata({
@@ -20,6 +17,11 @@ export async function generateStaticParams() {
   const { contents } = await getNotes();
 
   // return [{ id: "0orgc21uh9q" }];
+  // console.log(
+  //   contents.map((note) => ({
+  //     id: note.id,
+  //   }))
+  // );
   return contents.map((note) => ({
     id: note.id,
   }));

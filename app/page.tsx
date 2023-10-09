@@ -1,4 +1,6 @@
 //https://zenn.dev/tsuyoshi/articles/8d4a3e748eab0b
+// https://dev.classmethod.jp/articles/nextjs-static-cache/
+// https://serip39.hatenablog.com/entry/2022/02/01/070000
 import Link from "next/link";
 
 export default function Home() {

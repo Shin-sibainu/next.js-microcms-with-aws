@@ -1,7 +1,7 @@
 import React from "react";
 
-const NotFoundPage = () => {
+const NotFound = () => {
   return <div>note-found</div>;
 };
 
-export default NotFoundPage;
+export default NotFound;
