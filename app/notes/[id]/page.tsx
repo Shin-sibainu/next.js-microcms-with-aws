@@ -18,13 +18,10 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const { contents } = await getNotes();
-  //   return notes.map((note) => ({
-  //     id: note.id.toString(),
-  //   }));
 
   // return [{ id: "0orgc21uh9q" }];
   return contents.map((note) => ({
-    id: note.id.toString(),
+    id: note.id,
   }));
 }
 

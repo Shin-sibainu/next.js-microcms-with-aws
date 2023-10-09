@@ -31,11 +31,8 @@ export default function RootLayout({
               <Link href="/" className="hover:text-blue-600 duration-150">
                 Home
               </Link>
-              <Link
-                href="/notes/new"
-                className="hover:text-blue-600 duration-150"
-              >
-                Create
+              <Link href="/notes" className="hover:text-blue-600 duration-150">
+                Notes List
               </Link>
             </nav>
           </div>

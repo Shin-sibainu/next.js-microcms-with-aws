@@ -17,9 +17,9 @@ export default function Home() {
           </Link>
           <Link
             className="bg-blue-500 font-medium px-6 py-4 rounded-lg text-white text-base hover:bg-blue-700 duration-200"
-            href="/notes/new"
+            href="/notes"
           >
-            Create Note
+            Note List
           </Link>
         </div>
       </div>
