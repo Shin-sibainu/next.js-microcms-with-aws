@@ -1,7 +1,15 @@
 name: Manually deploy
-on:
-  repository_dispatch:
-    types: [update_note]
+# on:
+#   repository_dispatch:
+#     types: [update_note]
+
+on: 
+  workflow_dispatch: # ここをrepository_dispatchから変更
+    inputs:
+      reason:
+        description: 'The reason for the manual run'     
+        required: true
+        default: 'No particular reason'
 
 jobs:
   deploy:
