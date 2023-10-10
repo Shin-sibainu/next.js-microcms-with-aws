@@ -21,6 +21,10 @@ jobs:
 
       - name: Build
         run: npm run build
+      - name: Debug
+        run: |
+          echo "Bucket: ${{ secrets.AWS_S3_BUCKET }}"
+          echo "CF ID: ${{ secrets.AWS_CF_ID }}"
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
