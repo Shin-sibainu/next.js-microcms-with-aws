@@ -15,6 +15,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    # ここで環境を指定
+    environment: 
+      name: Production
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
